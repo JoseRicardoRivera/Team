@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+main{
+    flex-grow: 1;
+}
+.titulos {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 30vh;
+    width: 100vw;
+    align-items: baseline;
+}
+.descripcion{
+    width: 25vw;
+}
+.descripcion p {
+    line-height: 1.5em;
+}
+.titulo{
+    font-family: Georgia;
+    font-size: 1.8em;
+}
+.negrita{
+    font-weight: 600;
+}
+.fotos{
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+section{
+    width: 100vw;
+}
+.contenedor{
+    width: 70%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+.contenedor-equipo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galeria{
+    display: inline-block;
+    flex: 0 0 30%;
+    margin-bottom: 5%;
+    padding: 0px;
+}
+.galeria h2{
+    font-size: 18px;
+}
+.p-vertical{
+    display: inline-block;
+    font-size: 1vw;
+    writing-mode: vertical-lr;
+    height: 100%;
+    position: absolute;
+}
+
+footer{
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+@media screen and (max-width: 500px) {
+    .descripcion{
+        width: 100vw;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .contenedor{
+        padding: 5% 0;
+    }
+    .equipo{
+        margin-top: 20px;
+    }
+    .galeria{
+        flex: 0 0 50%;
+        margin: 20px 0px;
+    }
+    .galeria h2{
+        font-size: 14px;
+    }
+    .fotos{
+        height: 200px;
+        width: 100px;
+    }
+    .contenedor{
+        width: 70%;
+    }
+    .p-vertical{
+        font-size: 12px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
