@@ -81,6 +81,9 @@ footer{
     font-weight: 600;
     text-align: center;
 }
+.galeria:nth-child(2), .galeria:nth-child(5) {
+    margin-top: 50px;
+}
 @media screen and (max-width: 500px) {
     .descripcion{
         width: 100vw;
@@ -98,7 +101,7 @@ footer{
         margin: 20px 0px;
     }
     .galeria h2{
-        font-size: 14px;
+        font-size: 16px;
     }
     .fotos{
         height: 200px;
